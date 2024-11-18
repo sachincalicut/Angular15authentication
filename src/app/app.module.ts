@@ -14,6 +14,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 import { CustomerComponent } from './customer/customer.component';
+import { QaGenerativeComponent } from './qa-generative/qa-generative.component';
+import { SkeltonComponent } from './skelton/skelton.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,13 @@ import { CustomerComponent } from './customer/customer.component';
     HomeComponent,
     UserComponent,
     UpdatepopupComponent,
-    CustomerComponent
+    CustomerComponent,
+   
+    
   ],
   imports: [
+    QaGenerativeComponent,
+    SkeltonComponent,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

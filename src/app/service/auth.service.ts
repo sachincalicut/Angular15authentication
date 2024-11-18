@@ -5,6 +5,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthService {
+  private username: string = '';
+
+  setUsername(username: string) {
+    this.username = username;
+  }
+
+  getUsername() {
+    return this.username;
+  }
+
+
 
   constructor(private http:HttpClient) { 
 
